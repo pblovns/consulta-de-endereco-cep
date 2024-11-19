@@ -6,7 +6,7 @@ st.set_page_config(page_title="Consulta CEP", page_icon="logo_busca_cep.webp", l
 st.logo(image="logo_busca_cep.webp", size="large")
 
 # Título da aplicação
-st.title("Consultar Endereço")
+st.title("*_Consultar Endereço_*", anchor=False)
 
 # Campo de entrada do CEP
 entrada_cep = st.text_input(label="Informe o CEP para consulta", max_chars=8)
@@ -75,3 +75,8 @@ col1, col2, col3 = st.columns(3)
 col1.text_input(label="Tipo Endereço", value=st.session_state.dados["Tipo Endereço"], disabled=True)
 col2.text_input(label="Nome Endereço", value=st.session_state.dados["Nome Endereço"], disabled=True)
 col3.text_input(label="Bairro", value=st.session_state.dados["Bairro"], disabled=True)
+
+
+st.divider()
+
+st.link_button(label="Linkedin", url="https://www.linkedin.com/in/pablo-vinicius/")
